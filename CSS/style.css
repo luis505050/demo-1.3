@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Carousel */
+.container-carousel-saludo {
+    overflow: hidden;    
+}
+#sec-img img {
+    height: 40em; 
+}
+/*responsive para el carrusel*/
+
+@media (max-width: 768px){
+    #sec-img img{
+        height: 30em ;
+    } 
+}
+
+@media (max-width: 480px) {
+
+    .container-imagenes-y-tips img {
+        height: 30em ;
+    }
+
+    .container-videos video {
+        max-width: 100%;
+    }
+}
+
+/* Info Section */
+.container-info-conocenos {
+    padding: 20px;
+    background-color: #bdc3c7;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Video Section */
+.container-videos {
+    padding: 20px;
+    text-align: center;
+}
+
+.container-videos video {
+    width: 100%;
+    max-width: 600px;
+}
+
+
+/* Carrusel Card Styles */
+.carrusel-tips {
+    display: flex;
+    justify-content: center; /* Centra el carrusel horizontalmente */
+    align-items: center; /* Centra el carrusel verticalmente */
+    margin: 20px 0;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+}
+
+.card {
+    max-width: 540px;
+    width: 100%; /* Hace que la tarjeta ocupe el 100% del ancho de su contenedor */
+}
+
+.card img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 250px ; /* Mantiene la proporción de la imagen */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Permite que la tarjeta ocupe todo el ancho de la pantalla en dispositivos pequeños */
+    }
+
+    .card img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .carrusel {
+        padding: 10px;
+    }
+}
+
+/* Favoritismo Section */
+.container-favoritismo {
+    padding: 20px;
+    text-align: center;
+    background-color: #e2e2e2;
+}
+/* Contenedor principal */
+#por-que-elegirnos {
+    padding: 20px;
+    background-color: #d3d3d3; /* Color de fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Título principal */
+#por-que-elegirnos h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40; /* Color de texto oscuro */
+}
+
+/* Botón "Leer más" */
+
+#por-que-elegirnos .btn-primary  {
+    background-color: #007bff; /* Color del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px; /* Bordes redondeados del botón */
+}
+#por-que-elegirnos a {
+    color: #fff;
+}
+
+#por-que-elegirnos .btn-primary:hover {
+    background-color: #0056b3; /* Color del botón al pasar el cursor */
+}
+
+/* Filas y columnas */
+#por-que-elegirnos .row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las columnas se ajusten */
+    justify-content: space-around; /* Espacio alrededor de las columnas */
+    margin-top: 20px;
+}
+
+#por-que-elegirnos .col-md-3 {
+    flex: 1 1 22%; /* Toma un 22% del espacio en pantallas medianas y grandes */
+    max-width: 22%;
+    margin-bottom: 20px;
+}
+
+#por-que-elegirnos .col-sm-6 {
+    flex: 1 1 45%; /* Toma un 45% del espacio en pantallas pequeñas */
+    max-width: 45%;
+    margin-bottom: 20px;
+}
+
+/* Títulos de subsecciones */
+#por-que-elegirnos h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #001aff; /* Color del título */
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+#por-que-elegirnos p {
+    font-size: 1rem;
+    color: #000000; /* Color de texto gris suave */
+    line-height: 1.5; /* Altura de línea para una mejor legibilidad */
+}
+
+/* Responsivo adicional para pantallas pequeñas */
+@media (max-width: 768px) {
+    #por-que-elegirnos .col-md-3, 
+    #por-que-elegirnos .col-sm-6 {
+        flex: 1 1 100%; /* Las columnas ocupan el 100% del ancho en pantallas pequeñas */
+        max-width: 100%;
+    }
+
+    #por-que-elegirnos {
+        padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+}

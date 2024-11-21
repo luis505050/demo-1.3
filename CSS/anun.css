@@ -1,0 +1,59 @@
+
+
+#main-content {
+    height: 100vh;
+    overflow: auto;
+    filter: blur(30px); /* Aplica un desenfoque mientras el anuncio esté activo */
+}
+
+#modal-ad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fondo negro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 8000;
+}
+
+#ad-content {       
+    width: 65%; /* Ajusta el ancho relativo */
+    max-width: 900px; /* Ancho máximo para pantallas grandes */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: relative;
+}
+
+#ad-content img {
+    width: 65%; /* La imagen ocupa todo el ancho disponible */
+    height: 600px; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+}
+@media (max-width:768px){
+    #ad-content{
+        width: 90%;
+    }
+    #ad-content img{
+        width: 100%;
+    }
+}
+
+#close-ad {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#close-ad:hover {
+    color: red;
+}
